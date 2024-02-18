@@ -1,0 +1,160 @@
+body {
+    font-family: NunitoSans, sans-serif;
+    margin: 0;
+    min-width: 320px;
+    position: relative;
+    display: block;
+    background-color: #080808;
+}
+
+h1 {
+	font-family: "YesevaOne";
+	font-weight: 400;
+	font-size: 27px;
+	line-height: 37.4px;
+	letter-spacing: -2px;
+	color:#E3B873;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: "YesevaOne";
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 34.95px;
+	color:#E3B873;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: "YesevaOne";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 34.95px;
+	color:#E3B873;
+	text-transform: uppercase;
+}
+
+.text {
+	font-family: "NunitoSans";
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 26.73px;
+	color:#FFFFFF;
+}
+
+.main {
+    max-width: 1440px;
+	margin: 0 auto; 
+}
+
+.section {
+	margin: 107px 134px;
+	display: flex;
+	flex-direction: row;
+}
+
+.section-first {
+	padding-right: 50px;
+	display: flex;
+	flex-direction: column;
+}
+
+.container-first {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	max-width: 253px;
+}
+
+.line {
+	margin-top: 30px;
+}
+
+.container-second {
+    margin: 0 auto;
+	padding: 14px 5px 0px 5px;
+    gap: 24px;
+}
+
+.container-three {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-bottom: 50px;
+}
+
+.header-menu {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+    justify-content: space-between;
+}
+
+.slider {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	background-color: #080808;
+	position: relative;
+}
+
+
+.slider__arrows {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	gap: 123px; 
+	cursor: pointer;  
+}
+
+.slider__arrow:hover {
+	text-decoration: underline;
+	color: #1719ae;
+	opacity: 1;
+}
+
+.header-menu {
+	text-decoration: none;
+	color: grey;
+	cursor: pointer;
+}
+
+.header-menu:hover, .header-menu.active {
+	text-decoration: underline; 
+	color:#E3B873;
+}
+
+.image {
+	background-position: center;
+	background-size: cover;
+	width: 679px;
+	height: 482px;
+	display:none;
+}
+
+.image.active {
+	display: block;
+}
+
+.slider__dots {
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	gap: 10px;
+}
+
+.slider__dots-item {
+	width: 10px;
+	height: 10px;
+	background: grey;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background 0.4s ease;
+	position: relative;
+  }
+
+  .slider__dots-item:hover, .slider__dots-item.active {
+	background: white;
+  }
